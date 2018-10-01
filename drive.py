@@ -16,6 +16,13 @@ from keras.models import load_model
 import h5py
 from keras import __version__ as keras_version
 
+import tensorflow as tf
+from keras import backend as K
+config = tf.ConfigProto()
+config.gpu_options.per_process_gpu_memory_fraction = 0.2
+sess = tf.Session(config=config)
+K.set_session(sess)
+
 sio = socketio.Server()
 app = Flask(__name__)
 model = None
