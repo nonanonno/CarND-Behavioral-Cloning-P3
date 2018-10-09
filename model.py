@@ -128,6 +128,7 @@ if __name__ == '__main__':
 
     # train
     for epoch in range(epochs):
+        # At first, shuffle training data and validation data (X_train include both training data and validation data).
         X_train, y_train = shuffle(X_train, y_train)
         model.fit(X_train, y_train, validation_split=0.2,epochs=epoch+1, initial_epoch=epoch)
     
