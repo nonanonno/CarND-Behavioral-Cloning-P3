@@ -18,6 +18,8 @@ The goals / steps of this project are the following:
 [image3]: ./imgs/right_2018_10_01_11_05_08_336.jpg "right camera"
 [image4]: ./imgs/cropped.png "cropped"
 [image5]: ./imgs/center_2018_10_02_17_33_05_866.jpg "track2"
+[image6]: ./imgs/learning_1.png
+[image7]: ./imgs/learning_2.png
 
 ### Files Submitted & Code Quality
 
@@ -95,7 +97,16 @@ The model was trained and validated on different data sets to ensure that the mo
 
 #### 4. Model parameter tuning
 
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 25). The number of epochs is 20.
+The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 25).
+
+#### 5. Training
+The number of epochs is 20.
+
+Here is learning curve:
+
+![alt text][image6]
+
+The final valitation loss is 0.0008.
 
 ----
 ### Track two
@@ -115,3 +126,9 @@ Here is an example image:
 #### 2. Training
 
 The convolution network model architecture for track two is same as for track one. However the number of epochs is 40.
+
+Here is learning curve:
+
+![alt text][image7]
+
+The final valitation loss is 0.0045.
