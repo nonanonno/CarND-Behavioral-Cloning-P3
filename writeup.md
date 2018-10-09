@@ -72,6 +72,7 @@ Here is an example image of cropped data:
 
 
 My final model consisted of the following layers:
+
 |layer|description|output|
 |:-:|:-:|:-:|
 |Cropping2D|crop upper 50pix and lower 20pix|90x320x3|
